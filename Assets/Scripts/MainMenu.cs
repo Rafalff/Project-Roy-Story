@@ -13,4 +13,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.LoadLevel(scene_name);
     }
+
+    public void sound_volume(float volume)
+    {
+        PlayerPrefs.SetFloat("volume", volume);
+    }
 }
