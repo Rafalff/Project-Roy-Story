@@ -18,4 +18,9 @@ public class MainMenu : MonoBehaviour
     {
         PlayerPrefs.SetFloat("volume", volume);
     }
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
 }

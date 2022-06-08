@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 2519362891847306279}
   - component: {fileID: 2519362891847306278}
   - component: {fileID: 2519362891847306281}
-  - component: {fileID: 2519362891847306276}
   m_Layer: 0
   m_Name: 'Roy '
   m_TagString: Untagged
@@ -166,17 +165,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2519362891847306276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2519362891847306283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2fc4b69ba0a3a49981f940a53fb3fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveForce: 15
-  jumpForce: 28
