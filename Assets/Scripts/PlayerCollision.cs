@@ -10,7 +10,7 @@ public class PlayerCollision : MonoBehaviour
             if (HealthManager.health <= 0)
             {
                 PlayerManager.isGameOver = true;
-                //AudioManager.instance.Play("GameOver");
+                AudioManager.instance.Play("GameOver");
                 gameObject.SetActive(false);
             }
             else
