@@ -33,12 +33,20 @@ public class Player : MonoBehaviour
 
     void jalan_kiri()
     {
+        if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName("New State"))
+        {
+            GetComponent<Animator> ().SetTrigger("jalan");
+        }
         transform.localScale = new Vector3(-scaleX, transform.localScale.y, transform.localScale.x);
         transform.Translate(Vector3.left * kecepatan * Time.fixedDeltaTime, Space.Self);
     }
 
     void jalan_kanan()
     {
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("New State"))
+        {
+            GetComponent<Animator> ().SetTrigger("jalan");
+        }
         transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.x);
         transform.Translate(Vector3.right * kecepatan * Time.fixedDeltaTime, Space.Self);
     }
@@ -50,6 +58,11 @@ public class Player : MonoBehaviour
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
+    }
+
+    void berhenti()
+    {
+        GetComponent<Animator> ().SetTrigger("stop");
     }
 
     // Update is called once per frame
@@ -64,7 +77,12 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             jalan_kanan();
-        } 
+        }
+        
+        if (Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            berhenti();
+        }
     }
 
     void FixedUpdate()
