@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - Enemy
   - FallDetector
+  - Water
   layers:
   - Default
   - TransparentFX

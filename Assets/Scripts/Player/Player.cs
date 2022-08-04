@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject pauseMenuScreen;
+
     [SerializeField]
     private float jumpForce = 11f;
 
@@ -97,6 +99,12 @@ public class Player : MonoBehaviour
             isGrounded = true;
             Debug.Log("We Landed on Ground");
         }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        pauseMenuScreen.SetActive(true);
     }
 }
 

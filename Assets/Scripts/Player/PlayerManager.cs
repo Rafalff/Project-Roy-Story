@@ -32,6 +32,7 @@ public class PlayerManager : MonoBehaviour
         //coinsText.text = numberOfCoins.ToString();
         if (isGameOver)
         {
+            Time.timeScale = 0f;
             gameOverScreen.SetActive(true);
         }
     }
@@ -43,12 +44,12 @@ public class PlayerManager : MonoBehaviour
 
     public void PauseGame()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
         pauseMenuScreen.SetActive(true);
     }
     public void ResumeGame()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
         pauseMenuScreen.SetActive(false);
     }
     public void GoToMenu()
