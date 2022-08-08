@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Levels/MainMenu.unity
     guid: f82417adb79d2b7468ef9d0c8ca1e2ac
   - enabled: 1
-    path: Assets/Levels/RoyStory.unity
-    guid: 7292af1f94b787c4bbefdad817f42ab5
-  - enabled: 1
     path: Assets/Levels/Level1.unity
     guid: d01bc2b1439a5ee4580299ecb7ddc55b
   - enabled: 1
