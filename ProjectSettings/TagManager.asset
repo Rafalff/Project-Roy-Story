@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - FallDetector
   - Water
+  - StartPos
   layers:
   - Default
   - TransparentFX

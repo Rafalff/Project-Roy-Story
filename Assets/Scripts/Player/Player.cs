@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject pauseMenuScreen;
+    public GameObject gameoverScreen;
 
     [SerializeField]
     private float jumpForce = 11f;
@@ -27,10 +28,11 @@ public class Player : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Start is called before the first frame update
+  
     void Start()
     {
         scaleX = transform.localScale.x;
+        DontDestroyOnLoad(gameObject);
     }
 
     void jalan_kiri()
@@ -105,6 +107,17 @@ public class Player : MonoBehaviour
     {
         Time.timeScale = 0f;
         pauseMenuScreen.SetActive(true);
+
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+    }
+
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
     }
 }
 

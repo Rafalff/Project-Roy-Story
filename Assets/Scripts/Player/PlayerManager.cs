@@ -1,4 +1,4 @@
-using UnityEngine.SceneManagement;
+ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     {
         
         isGameOver = false;
+        Time.timeScale = 1;
 
     }
 

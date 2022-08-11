@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour
+public class loadLevel : MonoBehaviour
 {
+
     public int iLevelToLoad;
     public string sLevelToLoad;
 
     public bool useIntegerToLoadLevel = false;
-
+    // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,11 +28,11 @@ public class LoadScene : MonoBehaviour
 
         if(collisionGameObject.name == "Player")
         {
-            LoadLevel();
+            LoadScene();
         }
     }
 
-    void LoadLevel()
+    void LoadScene()
     {
         if (useIntegerToLoadLevel)
         {
