@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer sr;
 
+   
+
 
     private void Awake()
     {
@@ -32,7 +34,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         scaleX = transform.localScale.x;
-        DontDestroyOnLoad(gameObject);
     }
 
     void jalan_kiri()
