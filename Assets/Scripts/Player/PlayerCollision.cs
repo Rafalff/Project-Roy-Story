@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 public class PlayerCollision : MonoBehaviour
 {
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Enemy")
@@ -10,7 +11,7 @@ public class PlayerCollision : MonoBehaviour
             if (HealthManager.health <= 0)
             {
                 PlayerManager.isGameOver = true;
-                
+                AudioManager.instance.Play("GameOver");
                 gameObject.SetActive(false);
             }
             else
@@ -23,9 +24,9 @@ public class PlayerCollision : MonoBehaviour
         {
             HealthManager.health -= 3;
             if (HealthManager.health <= 0)
-            {
+            {  
                 PlayerManager.isGameOver = true;
-                
+                AudioManager.instance.Play("GameOver");
                 gameObject.SetActive(false);
             }
             else
@@ -34,6 +35,8 @@ public class PlayerCollision : MonoBehaviour
             }
         }
     }
+
+
     IEnumerator GetHurt()
     {
         Physics2D.IgnoreLayerCollision(6, 8);

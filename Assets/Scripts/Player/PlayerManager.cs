@@ -8,7 +8,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject pauseMenuScreen;
 
-    
+
 
     private void Awake()
     {
@@ -24,6 +24,7 @@ public class PlayerManager : MonoBehaviour
         {
             Time.timeScale = 0;
             gameOverScreen.SetActive(true);
+            
         }
     }
 

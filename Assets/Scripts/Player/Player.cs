@@ -21,13 +21,15 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer sr;
 
-   
-
+    [SerializeField] public AudioSource jumpSoundEffect;
+    [SerializeField] public AudioSource backgroundSound;
 
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        backgroundSound.Play();
+
     }
 
   
@@ -40,6 +42,7 @@ public class Player : MonoBehaviour
     {
         if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName("New State"))
         {
+            
             GetComponent<Animator> ().SetTrigger("jalan");
         }
         transform.localScale = new Vector3(-scaleX, transform.localScale.y, transform.localScale.x);
@@ -50,6 +53,7 @@ public class Player : MonoBehaviour
     {
         if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("New State"))
         {
+            
             GetComponent<Animator> ().SetTrigger("jalan");
         }
         transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.x);
@@ -60,6 +64,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            jumpSoundEffect.Play();
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
