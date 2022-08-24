@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 
     void jalan_kiri()
     {
-        if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName("New State"))
+        if (GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName("Idle"))
         {
             
             GetComponent<Animator> ().SetTrigger("jalan");
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
 
     void jalan_kanan()
     {
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("New State"))
+        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Idle"))
         {
             
             GetComponent<Animator> ().SetTrigger("jalan");
