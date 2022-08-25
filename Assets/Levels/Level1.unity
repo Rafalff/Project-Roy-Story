@@ -3913,7 +3913,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5995893, y: 1}
+    m_SensorSize: {x: 1.5992844, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3930,7 +3930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285382990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.29741, y: 3.5099993, z: -10}
+  m_LocalPosition: {x: 31.295597, y: 3.5099993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19526,7 +19526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317828756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.29741, y: 3.5099993, z: -10}
+  m_LocalPosition: {x: 31.295597, y: 3.5099993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30559,7 +30559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2519362891847306278, guid: 980500b971bfcad44a8c5213806dcb41, type: 3}
       propertyPath: m_Size.y
-      value: 9.837987
+      value: 8.52961
       objectReference: {fileID: 0}
     - target: {fileID: 2519362891847306278, guid: 980500b971bfcad44a8c5213806dcb41, type: 3}
       propertyPath: m_Offset.x
@@ -30567,7 +30567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2519362891847306278, guid: 980500b971bfcad44a8c5213806dcb41, type: 3}
       propertyPath: m_Offset.y
-      value: -0.50228643
+      value: -1.1564752
       objectReference: {fileID: 0}
     - target: {fileID: 2519362891847306278, guid: 980500b971bfcad44a8c5213806dcb41, type: 3}
       propertyPath: m_IsTrigger
@@ -30720,7 +30720,7 @@ MonoBehaviour:
   pauseMenuScreen: {fileID: 2099144283}
   gameoverScreen: {fileID: 1421666153}
   jumpForce: 35
-  kecepatan: 6
+  kecepatan: 4
   scaleX: 0
   jumpSoundEffect: {fileID: 2015558524}
   backgroundSound: {fileID: 2015558529}

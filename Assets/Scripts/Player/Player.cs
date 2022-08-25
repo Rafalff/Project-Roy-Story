@@ -45,6 +45,8 @@ public class Player : MonoBehaviour
             
             GetComponent<Animator> ().SetTrigger("jalan");
         }
+
+
         transform.localScale = new Vector3(-scaleX, transform.localScale.y, transform.localScale.x);
         transform.Translate(Vector3.left * kecepatan * Time.fixedDeltaTime, Space.Self);
     }
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
             
             GetComponent<Animator> ().SetTrigger("jalan");
         }
+
         transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.x);
         transform.Translate(Vector3.right * kecepatan * Time.fixedDeltaTime, Space.Self);
     }
@@ -64,6 +67,18 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            {
+
+                GetComponent<Animator>().SetTrigger("Jumping");
+            }
+
+            if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+            {
+                GetComponent<Animator>().SetTrigger("Jumping");
+            }
+
+
             jumpSoundEffect.Play();
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
