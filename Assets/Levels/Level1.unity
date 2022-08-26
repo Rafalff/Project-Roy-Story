@@ -3913,7 +3913,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5992844, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3930,7 +3930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285382990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.295597, y: 3.5099993, z: -10}
+  m_LocalPosition: {x: 32.35585, y: 3.5099993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6960,7 +6960,7 @@ SpriteRenderer:
   m_Size: {x: 29.318953, y: 9.891562}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &509472677
@@ -14863,7 +14863,7 @@ SpriteRenderer:
   m_Size: {x: 25.935951, y: 7.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &970442681
@@ -19526,7 +19526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317828756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.295597, y: 3.5099993, z: -10}
+  m_LocalPosition: {x: 32.35585, y: 3.5099993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26757,7 +26757,7 @@ SpriteRenderer:
   m_Size: {x: 29.318953, y: 7.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1795289366
@@ -30611,7 +30611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2519362891847306280, guid: 980500b971bfcad44a8c5213806dcb41, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2519362891847306280, guid: 980500b971bfcad44a8c5213806dcb41, type: 3}
       propertyPath: m_LocalScale.y
