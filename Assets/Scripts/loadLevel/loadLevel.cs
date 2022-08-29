@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class loadLevel : MonoBehaviour
 {
+    public Animator transition;
 
-    public int iLevelToLoad;
-    public string sLevelToLoad;
+    public float transitionTime;
 
-    public bool useIntegerToLoadLevel = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +29,13 @@ public class loadLevel : MonoBehaviour
 
     void LoadScene()
     {
-        if (useIntegerToLoadLevel)
-        {
-            SceneManager.LoadScene(iLevelToLoad);
-        }
-        else
-        {
-            SceneManager.LoadScene(sLevelToLoad);
-        }
+        StartCoroutine(LevelLoad(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LevelLoad(int levelIndex)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(levelIndex);
     }
 }
