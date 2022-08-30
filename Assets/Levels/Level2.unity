@@ -2012,8 +2012,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201676822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.2, y: 15.8, z: 0}
-  m_LocalScale: {x: 6.781371, y: 33.984325, z: 1}
+  m_LocalPosition: {x: 1844.911, y: 15.8, z: 0}
+  m_LocalScale: {x: 68.004265, y: 33.984325, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1513184478}
@@ -2363,7 +2363,7 @@ MonoBehaviour:
   pauseMenuScreen: {fileID: 2021456236}
   gameoverScreen: {fileID: 2146852016}
   jumpForce: 40
-  kecepatan: 6
+  kecepatan: 4
   scaleX: 0
   jumpSoundEffect: {fileID: 1405457905}
   backgroundSound: {fileID: 1405457904}
