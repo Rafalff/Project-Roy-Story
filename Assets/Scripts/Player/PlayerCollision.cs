@@ -29,11 +29,7 @@ public class PlayerCollision : MonoBehaviour
                 AudioManager.instance.Play("GameOver");
                 gameObject.SetActive(false);
             }
-            else
-            {
-                StartCoroutine(GetHurt());
-            }
-        }
+         }
     }
 
 

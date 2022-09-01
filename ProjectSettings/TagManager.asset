@@ -10,6 +10,7 @@ TagManager:
   - FallDetector
   - Water
   - StartPos
+  - player
   layers:
   - Default
   - TransparentFX
@@ -17,12 +18,12 @@ TagManager:
   - Background
   - Water
   - UI
-  - Player
+  - 
   - Enemy
   - Ground
   - Enemy
   - background
-  - 
+  - Player
   - 
   - 
   - 
@@ -47,6 +48,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Montain
-    uniqueID: 1998520347
+  - name: Background
+    uniqueID: 850410825
+    locked: 0
+  - name: Decoration
+    uniqueID: 1138523513
+    locked: 0
+  - name: Ground
+    uniqueID: 2507169919
+    locked: 0
+  - name: Enemy
+    uniqueID: 3441531173
+    locked: 0
+  - name: Player
+    uniqueID: 2636265441
     locked: 0

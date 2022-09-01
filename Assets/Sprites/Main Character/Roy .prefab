@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2519362891675018206}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 2519362891847306279}
   - component: {fileID: 2519362891847306278}
   - component: {fileID: 2519362891847306281}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 'Roy '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,8 +104,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1658701855
+  m_SortingLayer: 5
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: c0af73592b49af547853db11bc3fe8a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
