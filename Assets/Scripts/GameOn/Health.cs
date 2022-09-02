@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
@@ -35,8 +35,9 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
-                
-
+                PlayerManager.isGameOver = true;
+                AudioManager.instance.Play("GameOver");
+                gameObject.SetActive(false);
                 dead = true;
             }
         }
