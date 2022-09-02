@@ -14,10 +14,6 @@ public class PlayerCollision : MonoBehaviour
                 AudioManager.instance.Play("GameOver");
                 gameObject.SetActive(false);
             }
-            else
-            {
-                StartCoroutine(GetHurt());
-            }
         }
 
         if (collision.transform.tag == "Water")
@@ -30,16 +26,5 @@ public class PlayerCollision : MonoBehaviour
                 gameObject.SetActive(false);
             }
          }
-    }
-
-
-    IEnumerator GetHurt()
-    {
-        Physics2D.IgnoreLayerCollision(6, 8);
-        GetComponent<Animator>().SetLayerWeight(1, 1);
-        yield return new WaitForSeconds(3);
-        GetComponent<Animator>().SetLayerWeight(1, 0);
-        Physics2D.IgnoreLayerCollision(6, 8, false);
-        
     }
 }

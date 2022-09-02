@@ -43,6 +43,7 @@ public class Health : MonoBehaviour
         }
     }
 
+
     IEnumerator GetHurt()
     {
         Physics2D.IgnoreLayerCollision(6, 8);
