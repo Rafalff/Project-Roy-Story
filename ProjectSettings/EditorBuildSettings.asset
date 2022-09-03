@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level3.unity
     guid: 856ec2370bf514c43b63ada197b5770c
+  - enabled: 1
+    path: Assets/Levels/EneGame.unity
+    guid: 452620c6d18f3ba42bd55211b192955c
   m_configObjects: {}
