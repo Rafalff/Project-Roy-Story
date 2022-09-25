@@ -140,9 +140,9 @@ TextureImporter:
       name: Tileset_1
       rect:
         serializedVersion: 2
-        x: 1
+        x: 4
         y: 171
-        width: 94
+        width: 89
         height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -203,9 +203,9 @@ TextureImporter:
       name: Tileset_4
       rect:
         serializedVersion: 2
-        x: 161
+        x: 166
         y: 171
-        width: 94
+        width: 85
         height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -245,9 +245,9 @@ TextureImporter:
       name: Tileset_6
       rect:
         serializedVersion: 2
-        x: 289
+        x: 292
         y: 235
-        width: 30
+        width: 24
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -581,9 +581,9 @@ TextureImporter:
       name: Tileset_22
       rect:
         serializedVersion: 2
-        x: 192
+        x: 193
         y: 64
-        width: 32
+        width: 30
         height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -689,7 +689,7 @@ TextureImporter:
         x: 0
         y: 4
         width: 84
-        height: 110
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -707,8 +707,8 @@ TextureImporter:
       name: Tileset_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 100
+        x: 69
+        y: 96
         width: 64
         height: 10
       alignment: 0
@@ -1127,9 +1127,9 @@ TextureImporter:
       name: Tileset_48
       rect:
         serializedVersion: 2
-        x: 224
+        x: 225
         y: 64
-        width: 32
+        width: 30
         height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1148,12 +1148,12 @@ TextureImporter:
       name: Tileset_49
       rect:
         serializedVersion: 2
-        x: 352
-        y: 139
-        width: 62
-        height: 124
+        x: 327
+        y: 101
+        width: 114
+        height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1201,12 +1201,12 @@ TextureImporter:
       Tileset_22: -1372439593
       Tileset_9: 1631014074
       Tileset_34: -1257776677
-      Tileset_39: 147312393
-      Tileset_42: 809277407
+      Tileset_0: -841341776
       Tileset_41: 300057733
+      Tileset_42: 809277407
       Tileset_7: 2025306687
       Tileset_12: -429239296
-      Tileset_0: -841341776
+      Tileset_39: 147312393
       Tileset_4: -1652005713
       Tileset_37: -270496030
       Tileset_28: -744967979
